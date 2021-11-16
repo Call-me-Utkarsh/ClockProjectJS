@@ -1,0 +1,452 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Manrope', sans-serif;
+  
+}
+
+.main-container{
+    margin-left:8%;
+    margin-right:8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin-top:2%;
+    margin-bottom:4%;
+    position:relative;
+  
+
+}
+#grid-container1{
+
+   
+    width:45%;
+    height:75vh;
+    display:grid;
+    grid-row-gap:15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 50% 10% 20%;
+}
+
+
+.grid-container2{
+    width:45%;
+    height:70vh;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap:30px;
+    grid-template-rows:20% 95%;
+}
+
+
+#clock-pic{
+    background-image: url("./assests/clock-pic.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+
+#left-second-container{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position:relative;
+    border-radius:10px;
+}
+
+
+#good-afternoon{
+    grid-column-start:1;
+    grid-column-end:3;
+    position:relative;
+    padding-left:5%;
+    padding-top:2%;
+    font-size:20px;
+    border-radius:10px;
+    background-color:#8E53F0;
+    color:white;
+    font-weight:bold;
+    
+}
+
+
+
+
+
+
+
+.left-second-container-inner{
+  width: 100%;
+  height:33%;
+  position:relative;
+
+}
+
+
+#wakeUpTimeSelector{
+    width:120px;
+    height:35px;
+    border:1px solid black;
+    border-radius:3px;
+}
+
+
+#wakeUpTimeSelector option{
+    border:2px solid red;
+
+}
+
+
+#lunchTimeSelector{
+    width:120px;
+    height:35px;
+    border:1px solid black;
+    border-radius:3px;
+
+}
+
+#napTimeSelector{
+    width:120px;
+    height:35px;
+    border:1px solid black;
+    border-radius:3px;
+}
+#wakeUpTimeSelector:hover{
+    background-color: #BBBBBB;
+}
+#lunchTimeSelector:hover{
+    background-color: #BBBBBB;
+
+}
+#napTimeSelector:hover{
+    background-color: #BBBBBB;
+
+}
+
+
+
+#left-second-container{
+    position:relative;
+}
+.horizontal1{
+    position:absolute;
+    width:10%;
+    border-left:1px solid black;
+    height:13%;
+    top:23%;
+    left:10%;
+}
+.horizontal2{
+    position:absolute;
+    width:10%;
+    border-left:1px solid black;
+    height:13%;
+    top:58%;
+    left:10%;
+}
+
+
+#div11{
+    width:20%;
+    height:100%;
+    background-image:url("./assests/sun.png");
+    background-size:30% 30%;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:inline-block;
+
+}
+
+
+
+#div21{
+    width:20%;
+    height:100%;
+    background-image:url("./assests/food.png");
+    background-size:30% 30%;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:inline-block;
+
+
+}
+
+
+
+
+#div31{
+    width:20%;
+    height:100%;
+    background-image:url("./assests/nap.png");
+    background-size:30% 30%;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:inline-block;
+
+    
+}
+
+.left-seond-container-option{
+    width:80%;
+    height:100%;
+    display:inline-block;
+    position:absolute;
+    padding:20px;
+    
+}
+
+
+
+
+#party-time{
+    text-align: center;
+    padding-top:15px;
+    border-radius:5px;
+    background-image:linear-gradient(113deg,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-38) var(--unnamed-font-family-manrope);
+    color: white;
+
+}
+
+#party-time:hover{
+    background-image:linear-gradient(-113deg,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+
+}
+
+
+
+
+
+#digital-clock{
+    position:relative;
+    border-radius:10px;
+    background-color:#EDEDED;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1%;
+ 
+}
+
+
+
+#clock1{
+    width:15%;
+    height:80%;
+    float:left;
+    color:#3D087B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+   
+}
+
+
+#clock2{
+    text-align:center;
+    width:15%;
+    height:80%;
+    font-size:15px;
+    float:left;
+    background-color:#F6E2FF;
+    color:#8A11BF;
+    padding-top:5px;
+
+}
+
+
+#clock3{
+    width:5%;
+    height:80%;
+    float:left;
+    font-size:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+#clock4{
+    text-align:center;
+    width:17%;
+    height:80%;
+    font-size:15px;
+    float:left;
+    background-color:#F6E2FF;
+    color:#8A11BF;
+    padding-top:5px;
+}
+
+
+#clock5{
+    width:5%;
+    height:80%;
+    float:left;
+    font-size:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+#clock6{
+    text-align:center;
+    width:15%;
+    height:80%;
+    font-size:15px;
+    float:left;
+    background-color:#F6E2FF;
+    color:#8A11BF;
+    padding-top:5px;
+    
+}
+
+
+#clock7{
+    width:5%;
+    height:80%; 
+    float:left;
+  
+}
+
+
+#clock8{
+    width:13%;
+    height:80%;
+    font-size:30px;
+    float:left;
+    background-image:linear-gradient(45deg,#CB52F8,#FC5EFF);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#8A11BF;
+    position:relative;
+    border-radius:3px;
+
+}
+
+
+#clock9{
+    width:70%;
+    height:100%;
+    position:absolute;
+    top:10px;
+    margin:auto;
+    opacity:0.71;
+    z-index:-1;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    
+}
+
+
+#clock10{
+    width:60%;
+    height:100%;
+    position:absolute;
+    top:20px;
+    margin:auto;
+    opacity:0.22;
+    z-index:-2;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    
+}
+
+
+
+
+
+
+
+
+#right-bottom-container{
+    position:relative;
+
+   
+
+}
+
+
+
+#lunch{
+    position:relative;
+    top:0;
+    background-color:white;
+    padding-left:5%;
+    padding-top:5%;
+    width:100%;
+    height:20%;
+    font-size:25px;
+    font-weight:bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:#8E53F0;
+    
+
+
+}
+
+
+#lunchbottom{
+    position:absolute;
+    width:100%;
+    height:80%;
+    background-color:white;
+    background-image:url(" ./assests/ballon.PNG ");
+    background-size:100% 100%;
+    background-position:center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+      
+}
+
+
+
+
+
+#bottomost{
+    width:100%;
+    height:10px;
+    text-align:center;
+    position:absolute;
+    bottom:30px;
+    color:white;
+    opacity:0.5;
+    font-size:12px;
+    
+}
+.grid-item1{
+    font-size:35px;
+}
+
+
+@media(max-width:800px){
+    .main-container{
+        justify-content:flex-start;
+    }
+    #grid-container1{
+        width:90%;
+        right:0;
+    }
+    .grid-container2{
+        margin-top:50px;
+        width:90%;
+    }
+
+    .grid-item{
+        font-size:5px;
+    }
+    #good-afternoon{
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    
+
+
+    
+    
+}
+
+
